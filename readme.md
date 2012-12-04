@@ -4,9 +4,12 @@
 
 ### Gem Installation using Bundler (The very best way)
 
+My fork uses foundation 3 and simple form.
+
 Include the latest [gem](http://rubygems.org/gems/refinerycms-inquiries) into your Refinery CMS application's Gemfile:
 
     gem 'refinerycms-inquiries', '~> 2.0.0'
+    gem 'simple_form'
 
 Then type the following at command line inside your Refinery CMS application's root directory:
 
@@ -15,7 +18,8 @@ Then type the following at command line inside your Refinery CMS application's r
 #### Installation on Refinery 2.0.0 or above.
 
 To install the migrations, run:
-
+    
+    rails generate simple_form:install --foundation
     rails generate refinery:inquiries
     rake db:migrate
     
