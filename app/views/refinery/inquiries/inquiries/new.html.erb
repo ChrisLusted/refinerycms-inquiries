@@ -16,7 +16,7 @@
 <div id="projects">
   <div class="inner">
     <%= raw @page.content_for(:body) %>
-    <%= render :partial => "/refinery/portfolio/galleries/galleries", :locals => {:galleries => @galleries} %>
+    <%#= render :partial => "/refinery/portfolio/galleries/galleries", :locals => {:galleries => @galleries} %>
     <div class='inquiries'>
       <%= simple_form_for [refinery, :inquiries, @inquiry] do |f| %>
         <%#= render :partial => "/refinery/admin/error_messages",
